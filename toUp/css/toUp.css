@@ -1,0 +1,17 @@
+#ps_to_up{
+    display: none;
+    position: fixed;
+    width: 50px;
+    background-color: #e7cb00;
+    color: #fff;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 99999;
+    padding: 10px;
+    text-align: center;
+}
+
+#ps_to_up a{
+	color: #333;
+}
