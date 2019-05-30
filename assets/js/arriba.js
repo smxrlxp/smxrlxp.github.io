@@ -1,17 +1,27 @@
-$(document).ready(function(){
+<script type="text/javascript">/*<![CDATA[*/
+jQuery(document).ready(function() {
+    var duration = 900;
+    $(".back-to-top").hide();
  
-	$('.ir-arriba').click(function(){
-		$('body, html').animate({
-			scrollTop: '0px'
-		}, 300);
-	});
+    $(".back-to-top").on("click", function(e) {
+        e.preventDefault();
+        toTop();
+    });
  
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 0 ){
-			$('.ir-arriba').slideDown(300);
-		} else {
-			$('.ir-arriba').slideUp(300);
-		}
-	});
- 
+    $(function toTop() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $(".back-to-top").fadeIn();
+            } else {
+                $(".back-to-top").fadeOut();
+            }
+        });
+        $(".back-to-top").click(function() {
+            $("body,html").animate({
+                scrollTop: 0
+            }, duration);
+            return false;
+        });
+    });
 });
+/*]]>*/</script>

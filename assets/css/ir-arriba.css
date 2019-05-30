@@ -1,48 +1,21 @@
-@font-face {
-  font-family: 'icomoon';
-  src:  url('arrow/icomoon.eot?tc6qlq');
-  src:  url('arrow/icomoon.eot?tc6qlq#iefix') format('embedded-opentype'),
-    url('arrow/icomoon.ttf?tc6qlq') format('truetype'),
-    url('arrow/icomoon.woff?tc6qlq') format('woff'),
-    url('arrow/icomoon.svg?tc6qlq#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+.back-to-top{
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: white;
+    background-color: #2b373a;
+    font-size: 12px;
+    padding: 1em;
+  cursor: pointer;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
 }
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon{
-	background:url(../images/icons.png) no-repeat;
-	background-repeat:no-repeat;
-	width:20px;
-	height:20px;
-}
-
-.icon-arrow-up:before {
-  content: "\ea32";
-}
-
-.ir-arriba {
-	display:none;
-	padding:20px 25px;
-	background:#555533;
-	font-size:20px;
-	color:#000;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
+.back-to-top:hover {
+    background-color: rgba(235, 235, 235, 0.80);
+    text-decoration: none;
+    color: black;
 }
